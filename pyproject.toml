@@ -1,0 +1,26 @@
+[project]
+name = "open-mygo"
+version = "0.1.0"
+description = "My Own GRPO Project"
+readme = "readme.md"
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate==1.10.1",
+    "datasets==4.2.0",
+    "torch==2.9.0",
+    "vllm==0.11.1",
+    "fire==0.7.1",
+    "tenacity==9.1.2",
+    "swanlab==0.7.13",
+    "flash-attn==2.8.3",
+    "math_verify==0.8.0",
+    "ray[serve]==2.50.0",
+]
+
+[tool.uv]
+no-build-isolation-package = ["flash-attn"]
+prerelease = "allow"
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple"
+default = true

@@ -1,0 +1,14 @@
+__pycache__/
+.ipynb_checkpoints/
+
+.Trash-0/
+cache/
+wandb/
+swanlog/
+
+.vscode/
+.venv/
+uv.lock
+
+datasets
+models
