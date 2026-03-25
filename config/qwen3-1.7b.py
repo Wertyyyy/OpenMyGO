@@ -1,11 +1,10 @@
 from config.utils import get_path
 
 _model_impl = "implement.model.qwen"
-_model_name = "Qwen3-1.7B"
-# /werty/models/Qwen3-1.7B-SFT/v6-20251123-230215/checkpoint-968
+_model_name = "Qwen3-1.7B-SFT/v6-20251123-230215/checkpoint-968"
 
 _pregenerate_steps = 2
-_run_name = f"qwen3-1.7b-pg{_pregenerate_steps}"
+_run_name = f"qwen3-1.7b-sft-pg{_pregenerate_steps}"
 
 _total_gpu = 8
 _gpu_for_generation = 6
